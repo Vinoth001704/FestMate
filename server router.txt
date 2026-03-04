@@ -1,0 +1,41 @@
+server router
+
+user:
+   POST Methods 
+          login = "http://localhost:3000/api/user/login"
+          signup = "http://localhost:3000/api/user/register" 
+          otpverify = "http://localhost:3000/api/user/verifyData'
+   GET Methods
+          myprofile = "http://localhost:3000/api/user/myProfile"
+	     singleUser = "http://localhost:3000/api/user/profile/:id"
+          list of Users = "http://localhost:3000/api/user/listofUser"
+   DELETE Methods
+          delete a user = "http://localhost:3000/api/user/delete/:id"
+--------------------------------------------------------------------------------------
+event :
+   POST Methods
+          create event = "http://localhost:3000/api/event/new/"
+   GET Methods
+          Get all event = "http://localhost:3000/api/event/get/"
+          Get my event="http://localhost:3000/api/event/my"
+          Get particular event = "http://localhost:3000/api/event/single/:id"
+   DELETE Methods
+          delete particular event = "http://localhost:3000/api/event/delete/:id"
+---------------------------------------------------------------------------------------
+register event
+    POST Methods
+          register event = "http://localhost:3000/api/registerEvent/new/"
+    GET Methods
+          get all register data = "http://localhost:3000/api/registerEvent/get/"
+          get particular register data = "http://localhost:3000/api/registerEvent/get/:id"
+    DELETE Methods
+          delete particular registerEvent = "http://localhost:3000/api/registerEvent/delete/:id"
+------------------------------------------------------------------------------------------
+request event
+    POST Methods
+          to Approve a request = "http://localhost:3000/api/requestedEvents/approve/:id"
+          to Reject a request = "http://localhost:3000/api/requestedEvents/reject/:id"
+    GET Methods
+          get my request ="http//localhost:3000/requestedEvents/my"
+          get Approved all requests = "http://localhost:3000/api/requestedEvents/approved"
+          get all requests = "http://localhost:3000/api/requestedEvents/toVerify"

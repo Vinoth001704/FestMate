@@ -7,11 +7,7 @@ dotenv.config()
 
 const app=express();
 app.use(express.json());
-app.use(cors({
-  origin: process.env.NODE_ENV === 'development' 
-    ? true  // Allow all origins in dev
-    : 'https://festmate.vercel.app'  // Only prod URL in production
-}));
+app.use(cors());
 let port=process.env.PORT;
 
 import userRoutes from "./routes/user.js";
